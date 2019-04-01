@@ -6,11 +6,11 @@ var game = {
     levels: {
 
         start: {
-            message: "You come across a dark cave",
+            message: "You come across a haunted house",
             choices: [
                 {
-                    text: "Enter the cave",
-                    nextLevel: "cave",
+                    text: "Enter the house",
+                    nextLevel: "house",
                 },
 
                 {
@@ -20,20 +20,41 @@ var game = {
             ]
         },
 
-        cave: {
+        house: {
             background_image: "fire.gif",
             music: "Final-Fantasy-7-Boss-Battle.mp3",
-            message: "You come across a fire monster or something!",
+            message: "You come across a mysterious statue!",
             choices: [
+                
                 {
+                    text: "Takes statue",
+                    nextLevel: "statue",
+                },
+                
+               {
                     text: "Start over",
                     nextLevel: "start",
                 },
+                
             ]
         },
-
+        statue: {
+            background_image: "fire.gif",
+            music: "Final-Fantasy-7-Boss-Battle.mp3",
+            message: "You got eaten by a monster!!!!",
+            choices: [
+                
+               
+               {
+                    text: "Start over",
+                    nextLevel: "start",
+                },
+                
+            ]
+         },
+        
         field: {
-            message: "Some adventurer you are...",
+            message: "You are safety home...",
             choices: [
                 {
                     text: "Start over",
